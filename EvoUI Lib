@@ -101,9 +101,9 @@ local themeMeta = setmetatable({
 	end
 })
 
-if not isfolder("EvoV2\\Themes") then
+if not isfolder("WyHuv\\Themes") then
 	pcall(makefolder, "WyHuv")
-	pcall(makefolder, "EvoV2\\Themes")
+	pcall(makefolder, "WyHuv\\Themes")
 end
 
 for i, v in next, themes.Default do
