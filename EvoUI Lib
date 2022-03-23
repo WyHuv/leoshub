@@ -102,7 +102,7 @@ local themeMeta = setmetatable({
 })
 
 if not isfolder("EvoV2\\Themes") then
-	pcall(makefolder, "EvoV2")
+	pcall(makefolder, "WyHuv")
 	pcall(makefolder, "EvoV2\\Themes")
 end
 
@@ -1149,8 +1149,8 @@ function library:AddSettings()
 	localPlayer.Idled:Connect(function()
 		if self._settings.options.antiAfk then
 			virtualUser:Button2Down(Vector2.new(), cam.CFrame)
-   			task.wait(1)
-   			virtualUser:Button2Up(Vector2.new(), cam.CFrame)
+			task.wait(1)
+			virtualUser:Button2Up(Vector2.new(), cam.CFrame)
 		end
 	end)
 end
