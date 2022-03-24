@@ -1,0 +1,46 @@
+game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
+    Text = "Copied! Discord",
+    Font = Enum.Font.SourceSansBold,
+    TextSize = 20,
+})
+
+setclipboard("https://discord.gg/6hNUHuVQD5")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Mag Developments";
+Text = "Discord Server -> https://discord.gg/gbCKX4PzRk";
+Icon = "";
+Duration = 5;
+})
+
+local vu = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+  vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+  wait(1)
+  vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
+
+local ScriptURL = "https://raw.githubusercontent.com/WyHuv/Main/main/DiscordUI"
+
+local SupportedGames = {
+    [8204899140] = ''FootballFusion2;
+    [7560156054] = 'ClickerSimulator';
+    [137877687] = 'RoCitizens';
+    [4520749081] = 'KingLegacy';
+    [286090429] = 'Arsenal';
+    [4616652839] = 'ShindoLife';
+    [7655745946] = 'DunkingSimulator';
+    [166986752] = 'PlaneCrazy';
+    [537413528] = 'BuildABoat';
+    [2788229376] = 'DaHood';
+    [185655149] = 'Bloxburg';
+    [2753915549] = 'BloxFruits';
+    [621129760] = 'Kat';
+    [4689179508] = 'ProjectGhoul';
+    
+}
+
+for i,v in next, SupportedGames do
+if i == game.PlaceId or i == game.GameId then
+loadstring(game:HttpGet(ScriptURL .. v .. '.lua'))()       
+end
+end
