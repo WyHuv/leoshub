@@ -22,7 +22,7 @@ end)
 local ScriptURL = "https://raw.githubusercontent.com/WyHuv/Main/main/DiscordUI"
 
 local SupportedGames = {
-    [8204899140] = ''FootballFusion2;
+    [8204899140] = 'FootballFusion2';
     [7560156054] = 'ClickerSimulator';
     [137877687] = 'RoCitizens';
     [4520749081] = 'KingLegacy';
